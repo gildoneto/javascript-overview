@@ -343,12 +343,197 @@ media = 5.7
 media >= 7.0 ? "Aprovado" : "Reprovado" //-> Reprovado
 ```
 
-### 5. Condicionais
+### 5. Estruturas Condicionais
 
-### 6. Estrutura de Repetição
+Estruturas que são executadas apenas se atenderem as condições definidas no código.
+
+#### **if** 
+
+```javascript
+let num = 1;
+
+if (num === 1){
+    console.log("num é igual a 1")
+}
+```
+
+#### **if else** 
+
+```javascript
+let num = 1;
+
+if (num === 1){
+    console.log("num é igual a 1")
+} else {
+    console.log("num não é igual a 1")
+}
+```
+
+#### **if else if** 
+
+```javascript
+let num = 1;
+
+if (num === 1){
+    console.log("num é igual a 1")
+} else if (num === 2) {
+    console.log("num é igual a 2")
+} else {
+    console.log("num não é igual a 1 nem a 2")
+}
+```
+
+#### **switch case** 
+
+```javascript
+let month = "janeiro"
+
+switch (month) {
+    case "fevereiro":
+        console.log("Mês 2")
+        break
+
+    case "março":
+        console.log("Mês 3")
+        break
+    
+    case "janeiro":
+        console.log("Mês 1")
+        break
+
+    default:
+        console.log("nenhum caso foi atendido")
+}
+```
+
+### 6. Estruturas de Repetição
+
+#### for
+
+```javascript
+var colors = ["black", "white", "yellow", "green", "blue"]
+
+for (let i = 0; i < colors.length; i++){
+    console.log(colors[i])
+}
+```
+
+```javascript
+for (let i = 0; i < 10; i++){
+    console.log(i)
+}
+```
+
+#### while
+
+```javascript
+let i = 0;
+
+while (i < 10){
+    console.log(i);
+    i++;
+}
+```
+
+#### do while
+
+```javascript
+let i = 0;
+
+do {
+    console.log(i);
+    i++;
+} while (i < 10)
+```
 
 ### 7. Funções
 
+Função sem parâmetro
+```javascript
+function sayHello() {
+    console.log('Hello')
+}
+
+sayHello()
+```
+
+Função com parâmetro(argumento)
+```javascript
+function sayHello(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName)
+}
+
+sayHello('Chico', 'Science')
+```
+
+Função com return
+```javascript
+function sum(a,b) {
+    return a + b
+}
+
+console.log(sum(40,60))
+```
+
 ### 8. Classes
+
+Desde de 2015 que é possível trabalhar com orientação a objetos no JavaScript.
+
+```javascript
+class Book {
+    constructor(title, author, pages){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+
+    read(){
+        return `Estou lendo ${this.title}`
+    }
+}
+
+let book = new Book('Algoritmos', 'Brian', 500);
+let otherBook = new Book('Exu em Nova York', 'Cidinha da Silva', 100);
+
+console.log(book.read())
+```
+
+#### Herança
+
+```javascript
+class ITBook extends Book {
+    constructor(title, author, pages, technology){
+        super(title, author, pages)
+        this.technology = technology;
+    }
+}
+
+let itBook = new ITBook('Algoritmos for living', 'Brian', 500, 'Algoritmos');
+
+console.log(itBook)
+```
+
+#### Encapsulamento
+
+```javascript
+class Person {
+    constructor(name){
+        this._name = name;
+    }
+
+    get name(){
+        return this._name
+    }
+
+    set name(value){
+        this._name = value
+    }
+}
+
+let person = new Person('Gildo')
+person.name = 'Neto'
+console.log(person.name)
+```
+
 
 ### 9. Exercícios Introdução
