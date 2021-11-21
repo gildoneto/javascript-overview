@@ -17,7 +17,7 @@ Variáveis servem para guardarmos dados de vários tipos. Javascript é uma ligu
 O que define o tipo de uma variável é o valor atribuído a ela.
 Uma variável declarada com as palavras reservadas `let` ou `var`, pode receber qualquer outro valor de qualquer tipo a qualquer momento, sempre respeitando o escopo.
 
-##### Identificadores
+#### Identificadores
 
 - Podem começar com `letra`, `$` ou `_`
 - Não podem começar com números
@@ -41,7 +41,7 @@ Uma variável declarada com as palavras reservadas `let` ou `var`, pode receber 
 |   Pode ser<br> redeclarado?  | :heavy_check_mark: |               :x:              |              :x:             |
 |    Pode ser<br> hospedado?   | :heavy_check_mark: |               :x:              |              :x:             |
 
-##### Escopo
+#### Escopo
 
 Variáveis declaradas com a palavra reservada `var` ficam disponíveis no escopo Global e podem ser acesadas mesmo que fora de um bloco de código.
 
@@ -72,7 +72,7 @@ const name = "João"
 console.log(name) //-> João
 ```
 
-##### Hoisting
+#### Hoisting
 
 No JavaScript as variáveis declaradas com o `var` sofrem o que se chama de **Hoisting**. É como se o JavaScript declarasse aquela variável fora do bloco de código sem inicializá-la, e dentro do bloco ele atribui um valor. Exemplo:
 
