@@ -2,14 +2,14 @@
 
 ## INTRODUÇÃO
 
-#### 1. O que é Javascript?
+### 1. O que é Javascript?
 
 > "JavaScript é uma das linguagens de programação mais populares atualmente. É conhecida como a linguagem da internet porque os navegadores a entendem de modo nativo sem a instalação de qualquer plugin."
 
 Loiane Groner
 **Estruturas de dados e algoritmos com JavaScript, 2018**
 
-#### 2. Variáveis
+### 2. Variáveis
 
 Variáveis são usadas para armazenar dados, que podem ser atualizados ou recuperados sempre que necessário.
 
@@ -17,7 +17,7 @@ Variáveis servem para guardarmos dados de vários tipos. Javascript é uma ligu
 O que define o tipo de uma variável é o valor atribuído a ela.
 Uma variável declarada com as palavras reservadas `let` ou `var`, pode receber qualquer outro valor de qualquer tipo a qualquer momento, sempre respeitando o escopo.
 
-###### Identificadores
+##### Identificadores
 
 - Podem começar com `letra`, `$` ou `_`
 - Não podem começar com números
@@ -41,7 +41,7 @@ Uma variável declarada com as palavras reservadas `let` ou `var`, pode receber 
 |   Pode ser<br> redeclarado?  | :heavy_check_mark: |               :x:              |              :x:             |
 |    Pode ser<br> hospedado?   | :heavy_check_mark: |               :x:              |              :x:             |
 
-###### Escopo
+##### Escopo
 
 Variáveis declaradas com a palavra reservada `var` ficam disponíveis no escopo Global e podem ser acesadas mesmo que fora de um bloco de código.
 
@@ -72,7 +72,7 @@ const name = "João"
 console.log(name) //-> João
 ```
 
-###### Hoisting
+##### Hoisting
 
 No JavaScript as variáveis declaradas com o `var` sofrem o que se chama de **Hoisting**. É como se o JavaScript declarasse aquela variável fora do bloco de código sem inicializá-la, e dentro do bloco ele atribui um valor. Exemplo:
 
@@ -85,16 +85,16 @@ var age;
 console.log(age) //-> 32
 ```
 
-#### 3. Tipos de dados
+### 3. Tipos de dados
 
-#### 4. Operadores
+### 4. Operadores
 
-#### 5. Condicionais
+### 5. Condicionais
 
-#### 6. Estrutura de Repetição
+### 6. Estrutura de Repetição
 
-#### 7. Funções
+### 7. Funções
 
-#### 8. Classes
+### 8. Classes
 
-#### 9. Exercícios
+### 9. Exercícios
