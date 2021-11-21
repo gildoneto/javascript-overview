@@ -317,9 +317,9 @@ false || false //-> false
 
 1. Operadores Aritméticos `()` `**` `/` ...
 2. Operadores Relacionais `>` `<` `>=` ... 
-3. Operadores Lógicos
-    3.1 **`!`**
-    3.2 **`&&`**
+3. Operadores Lógicos<br>
+    3.1 **`!`**<br>
+    3.2 **`&&`**<br>
     3.3 **`||`**
 
 ```javascript
